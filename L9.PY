@@ -1,4 +1,4 @@
-def isPalindrome(x: int) -> bool:
+def isPalindrome(self, x: int) -> bool:
         if x < 0:
             return False
         x = str(x)
@@ -12,3 +12,6 @@ def isPalindrome(x: int) -> bool:
             if x[i] != x[len(x)-i-1]:
                 return False
         return True
+
+def isPalindrome(self, x: int) -> bool:
+        return str(x) == str(x)[::-1]
